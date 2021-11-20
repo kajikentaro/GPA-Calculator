@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "GPA calculator",
+  "version": "0.0.1",
+  "description": "中央大学 C-plus の成績紹介でGPAを自動的に計算します",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.ac02.tamacc.chuo-u.ac.jp/kyomu/*"
+      ],
+      "js": [
+        "gpa-calc.js"
+      ]
+    }
+  ]
+}
